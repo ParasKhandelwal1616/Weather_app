@@ -8,11 +8,152 @@
     <title>Weather_App</title>
 </head> 
 <body>
-    <label for="city">
-        Enter city name
-    </label>
-    <input type="text" id="city" placeholder="Enter city name">
-    <button  class=" data-butn   bg-red-500 "  >Get weather</button>
+   <!--wapper-->
+   <div class=" bg-black w-full h-screen">
+    <!--contanir section-->
+    <div class=" max-w-[1300px] mx-auto bg-gray-900 flex h-full flex-row gap-5"> 
+        <!--left sidebar-->
+        <section class="w-[100px] bg-gray-800 ml-5 mt-3 mb-3 rounded-2xl flex flex-col items-center justify-center">
+            <!--upper section-->
+           <div class=" absolute top-10"> <a href="index.html">
+            <img src="./images/app logo.png" alt="App Logo" width="30px">
+        </a></div>
+        <!--navigation section-->
+           <div class=" text-gray-500  font-bold flex flex-col gap-8 pl-3">
+            <!--nav1-->
+            <div class=" hover:scale-105 transition-all duration-200 ">
+                <a href="index.html">
+                    <img src="./images/weather icon.png" alt="" width="30px">
+                    <div class=" pt-2 ">Weather</div>
+                </a>
+                
+            </div>
+
+             <!--nav2-->
+             <div class=" hover:scale-105 transition-all duration-200">
+                <a href="index.html">
+                    <img src="./images/list icon.png" alt="" width="30px">
+                    <div class="pt-2">Cities</div>
+                </a>
+                
+            </div>
+
+             <!--nav3-->
+             <div class=" hover:scale-105 transition-all duration-200">
+                <a href="index.html">
+                    <img src="./images/map icon.png" alt="" 
+                    width="30px">
+                    <div class="">Map</div>
+                </a>
+                
+            </div>
+
+             <!--nav4-->
+             <div class=" hover:scale-105 transition-all duration-200">
+                <a href="index.html">
+                    <img src="./images/setting icons.png" alt="" width="30px">
+                    <div class="">Setting</div>
+                </a>
+                
+            </div>
+
+
+           </div>
+        </section>
+
+
+        <!--main section-->
+        <section class="w-[750px] mt-5 ml-5 ">
+            <!--search section-->
+            <input type="text" class="w-full h-[60px] bg-gray-800 text-white text-xl  pl-5 rounded-xl" placeholder="Search City">
+
+            <!--weather section-->
+            <div class=" flex flex-row justify-between mt-5">
+              <div class=" flex flex-col gap-7">
+                  <!--city name-->
+                  <div class="text-white text-3xl mt-5 text-[70px]">City Name</div>
+                  <!--temprature-->
+                  <div class="  text-white text-[70px]">30</div>
+              </div>
+                <!--weather icon-->
+                <div class="">
+                    <img src="./images/sunny.png" alt="" width="200px">
+                </div>
+                
+
+            </div>
+
+            <!--forcast-->
+            <div class=" w-full h-[200px] bg-gray-800 mt-5  rounded-xl ">
+                <div class=" text-gray-500 font-bold pl-5 pt-5">TODAY'S FORCAST</div>
+                 <!--24 hrs forcast-->
+            <div class=" flex flex-row pl-4 pt-3 ">
+                <!--card1-->
+                <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
+                    <div class="  text-gray-500 font-bold">6:00 AM</div>
+                    <img src="./images/cloud.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 25</div>
+                </div>
+                <!--card2-->
+                <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
+                    <div class="  text-gray-500 font-bold">9:00 AM</div>
+                    <img src="./images/rainy.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 20</div>
+                </div>
+
+                <!--card3-->
+                <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
+                    <div class="  text-gray-500 font-bold">12:00 PM</div>
+                    <img src="./images/sunny cloudy.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 23</div>
+                </div>
+
+                <!--card1-->
+                <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
+                    <div class="  text-gray-500 font-bold">3:00 PM</div>
+                    <img src="./images/sunny cloudy.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 25</div>
+                </div>
+
+                <!--card1-->
+                <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
+                    <div class="  text-gray-500 font-bold">6:00 PM</div>
+                    <img src="./images/sunny.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 27</div>
+                </div>
+
+                <!--card1-->
+                <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
+                    <div class="  text-gray-500 font-bold">9:00 PM</div>
+                    <img src="./images/sunny.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 28</div>
+                </div><!--card1-->
+                <div class=" flex flex-col justify-center items-center  w-[110px]">
+                    <div class=" text-gray-500 font-bold">12:00 AM</div>
+                    <img src="./images/sunny cloudy.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 25</div>
+                </div>
+            </div>
+            </div>
+            <div class=" w-full h-[320px] bg-gray-800 mt-3 rounded-xl"> 
+                <div class="flex flex-row justify-between pt-6">
+                    <div class=" text-gray-500 font-bold pl-7">
+                        AIR CONDITION 
+                    </div>
+                    <button class=" bg-blue-500 w-28 text-white rounded-full mr-7">See more</button>
+                </div>
+
+                
+            </div>
+           
+        </section>
+
+
+       
+    </div>
+   </div>
+
+
     <script src="./index.js"></script>
 </body>
 </html>
