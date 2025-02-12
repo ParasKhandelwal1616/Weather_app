@@ -63,7 +63,7 @@
 
 
         <!--main section-->
-        <section class="w-[750px] mt-5 ml-5 ">
+        <section class="w-[750px] mt-4 ml-5 ">
             <!--search section-->
             <input type="text" class="w-full h-[60px] bg-gray-800 text-white text-xl  pl-5 rounded-xl" placeholder="Search City">
 
@@ -73,7 +73,7 @@
                   <!--city name-->
                   <div class="text-white text-3xl mt-5 text-[70px]">City Name</div>
                   <!--temprature-->
-                  <div class="  text-white text-[70px]">30</div>
+                  <div class="  text-white text-[70px]">30°</div>
               </div>
                 <!--weather icon-->
                 <div class="">
@@ -92,46 +92,46 @@
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">6:00 AM</div>
                     <img src="./images/cloud.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 25</div>
+                    <div class=" text-white font-bold text-2xl"> 25°</div>
                 </div>
                 <!--card2-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">9:00 AM</div>
                     <img src="./images/rainy.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 20</div>
+                    <div class=" text-white font-bold text-2xl"> 20°</div>
                 </div>
 
                 <!--card3-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">12:00 PM</div>
                     <img src="./images/sunny cloudy.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 23</div>
+                    <div class=" text-white font-bold text-2xl"> 23°</div>
                 </div>
 
                 <!--card1-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">3:00 PM</div>
-                    <img src="./images/sunny cloudy.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 25</div>
+                    <img src="./images/sunny.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 25°</div>
                 </div>
 
                 <!--card1-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">6:00 PM</div>
-                    <img src="./images/sunny.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 27</div>
+                    <img src="./images/cloudy-night.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 27°</div>
                 </div>
 
                 <!--card1-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">9:00 PM</div>
-                    <img src="./images/sunny.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 28</div>
+                    <img src="./images/clear night.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 28°</div>
                 </div><!--card1-->
                 <div class=" flex flex-col justify-center items-center  w-[110px]">
                     <div class=" text-gray-500 font-bold">12:00 AM</div>
-                    <img src="./images/sunny cloudy.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 25</div>
+                    <img src="./images/clear night.png" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl"> 25°</div>
                 </div>
             </div>
             </div>
@@ -143,12 +143,102 @@
                     <button class=" bg-blue-500 w-28 text-white rounded-full mr-7">See more</button>
                 </div>
 
-                
+                <div class=" grid grid-cols-2 gap-9 mt-11 ml-7">
+                    <!--card1-->
+                    <div class=" flex flex-col  justify-center ">
+                        <div class=" flex flex-row gap-2">
+                            <img src="./images/temp icon.png" width="30px" alt="">
+                            <p class=" text-gray-500 font-bold">Real Feel</p>
+                        </div>
+                        <div class=" text-2xl text-white font-bold pl-10">25°</div>
+                    </div>
+
+                     <!--card2-->
+                     <div class=" flex flex-col  justify-center ">
+                        <div class=" flex flex-row gap-2">
+                            <img src="./images/wind icon.png" width="30px" alt="">
+                            <p class=" text-gray-500 font-bold">Wind Speed</p>
+                        </div>
+                        <div class=" text-2xl text-white font-bold pl-10">25 <span>km/h</span></div>
+                    </div>
+
+
+                     <!--card3-->
+                     <div class=" flex flex-col justify-center ">
+                        <div class=" flex flex-row gap-2">
+                            <img src="./images/drop icon.png" width="30px" alt="">
+                            <p class=" text-gray-500 font-bold">Humidity</p>
+                        </div>
+                        <div class=" text-2xl text-white font-bold pl-10">25 <span>%</span></div>
+                    </div>
+
+
+                     <!--card4-->
+                     <div class=" flex flex-col  justify-center ">
+                        <div class=" flex flex-row gap-2">
+                            <img src="./images/uv icons.png" width="30px" alt="">
+                            <p class=" text-gray-500 font-bold">Uv index</p>
+                        </div>
+                        <div class=" text-2xl text-white font-bold pl-10">25 </div>
+                    </div>
+
+
+                    
+                </div>
             </div>
            
         </section>
 
-
+        <!--7 days forcast-->
+        <section class="w-[400px] mr-5 mt-36 mb-5 flex justify-center items-center ml-5 bg-gray-800 rounded-2xl p-6">
+            <div class="text-white w-full">
+                <h2 class="text-xl font-semibold mb-4 text-center">7-DAY FORECAST</h2>
+                <div class="space-y-3">
+                    <!-- Forecast Item -->
+                    <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                        <span class="text-lg font-medium">Monday</span>
+                        <img src="./images/sunny.png" alt="Sunny" class="w-8 h-8">
+                        <span class="text-lg font-medium">36° / 22°</span>
+                    </div>
+        
+                    <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                        <span class="text-lg font-medium">Tuesday</span>
+                        <img src="./images/cloud.png" alt="Cloudy" class="w-8 h-8">
+                        <span class="text-lg font-medium">34° / 21°</span>
+                    </div>
+        
+                    <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                        <span class="text-lg font-medium">Wednesday</span>
+                        <img src="./images/rainy.png" alt="Rainy" class="w-8 h-8">
+                        <span class="text-lg font-medium">32° / 20°</span>
+                    </div>
+        
+                    <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                        <span class="text-lg font-medium">Thursday</span>
+                        <img src="./images/sunny cloudy.png" alt="Partly Cloudy" class="w-8 h-8">
+                        <span class="text-lg font-medium">35° / 22°</span>
+                    </div>
+        
+                    <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                        <span class="text-lg font-medium">Friday</span>
+                        <img src="./images/cloudy-night.png" alt="Cloudy Night" class="w-8 h-8">
+                        <span class="text-lg font-medium">30° / 19°</span>
+                    </div>
+        
+                    <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                        <span class="text-lg font-medium">Saturday</span>
+                        <img src="./images/clear night.png" alt="Clear Night" class="w-8 h-8">
+                        <span class="text-lg font-medium">31° / 18°</span>
+                    </div>
+        
+                    <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                        <span class="text-lg font-medium">Sunday</span>
+                        <img src="./images/sunny.png" alt="Sunny" class="w-8 h-8">
+                        <span class="text-lg font-medium">37° / 23°</span>
+                    </div>
+                </div>
+            </div>
+        </section>
        
     </div>
    </div>
