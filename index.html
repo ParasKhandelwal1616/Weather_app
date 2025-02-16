@@ -65,19 +65,19 @@
         <!--main section-->
         <section class="w-[750px] mt-4 ml-5 ">
             <!--search section-->
-            <input type="text" class="w-full h-[60px] bg-gray-800 text-white text-xl  pl-5 rounded-xl" placeholder="Search City">
+            <input type="text"  id="search" class="w-full h-[60px] bg-gray-800 text-white text-xl  pl-5 rounded-xl" placeholder="Search City">
 
             <!--weather section-->
             <div class=" flex flex-row justify-between mt-5">
               <div class=" flex flex-col gap-7">
                   <!--city name-->
-                  <div class="text-white text-3xl mt-5 text-[70px]">City Name</div>
+                  <div class="text-white text-3xl mt-5 text-[70px]" id="cityname">City Name</div>
                   <!--temprature-->
-                  <div class="  text-white text-[70px]">30°</div>
+                  <div class="  text-white text-[70px]" id="temp">30°</div>
               </div>
                 <!--weather icon-->
                 <div class="">
-                    <img src="./images/sunny.png" alt="" width="200px">
+                    <img src="./images/sunny.png" alt="" width="200px" id="weather_icon">
                 </div>
                 
 
@@ -91,47 +91,47 @@
                 <!--card1-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">6:00 AM</div>
-                    <img src="./images/cloud.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 25°</div>
+                    <img src="./images/cloud.png" id="weather_icon" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl" id="forcasttemp"> 25°</div>
                 </div>
                 <!--card2-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">9:00 AM</div>
-                    <img src="./images/rainy.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 20°</div>
+                    <img src="./images/rainy.png" id="weather_icon" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl" id="forcasttemp"> 20°</div>
                 </div>
 
                 <!--card3-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">12:00 PM</div>
-                    <img src="./images/sunny cloudy.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 23°</div>
+                    <img src="./images/sunny cloudy.png" id="weather_icon" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl" id="forcasttemp"> 23°</div>
                 </div>
 
                 <!--card1-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">3:00 PM</div>
-                    <img src="./images/sunny.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 25°</div>
+                    <img src="./images/sunny.png" id="weather_icon" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl" id="forcasttemp"> 25°</div>
                 </div>
 
                 <!--card1-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">6:00 PM</div>
-                    <img src="./images/cloudy-night.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 27°</div>
+                    <img src="./images/cloudy-night.png" id="weather_icon" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl" id="forcasttemp"> 27°</div>
                 </div>
 
                 <!--card1-->
                 <div class=" flex flex-col justify-center items-center border-r-2 w-[110px]">
                     <div class="  text-gray-500 font-bold">9:00 PM</div>
-                    <img src="./images/clear night.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 28°</div>
+                    <img src="./images/clear night.png" id="weather_icon" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl" id="forcasttemp"> 28°</div>
                 </div><!--card1-->
                 <div class=" flex flex-col justify-center items-center  w-[110px]">
                     <div class=" text-gray-500 font-bold">12:00 AM</div>
-                    <img src="./images/clear night.png" alt="" width="65px">
-                    <div class=" text-white font-bold text-2xl"> 25°</div>
+                    <img src="./images/clear night.png" id="weather_icon" alt="" width="65px">
+                    <div class=" text-white font-bold text-2xl" id="forcasttemp"> 25°</div>
                 </div>
             </div>
             </div>
@@ -145,7 +145,7 @@
 
                 <div class=" grid grid-cols-2 gap-9 mt-11 ml-7">
                     <!--card1-->
-                    <div class=" flex flex-col  justify-center ">
+                    <div class=" flex flex-col  justify-center "  id="feellike">
                         <div class=" flex flex-row gap-2">
                             <img src="./images/temp icon.png" width="30px" alt="">
                             <p class=" text-gray-500 font-bold">Real Feel</p>
@@ -154,7 +154,7 @@
                     </div>
 
                      <!--card2-->
-                     <div class=" flex flex-col  justify-center ">
+                     <div class=" flex flex-col  justify-center "  id="wind">
                         <div class=" flex flex-row gap-2">
                             <img src="./images/wind icon.png" width="30px" alt="">
                             <p class=" text-gray-500 font-bold">Wind Speed</p>
@@ -164,7 +164,7 @@
 
 
                      <!--card3-->
-                     <div class=" flex flex-col justify-center ">
+                     <div class=" flex flex-col justify-center "  id="humidity">
                         <div class=" flex flex-row gap-2">
                             <img src="./images/drop icon.png" width="30px" alt="">
                             <p class=" text-gray-500 font-bold">Humidity</p>
@@ -174,7 +174,7 @@
 
 
                      <!--card4-->
-                     <div class=" flex flex-col  justify-center ">
+                     <div class=" flex flex-col  justify-center "  id="uv">
                         <div class=" flex flex-row gap-2">
                             <img src="./images/uv icons.png" width="30px" alt="">
                             <p class=" text-gray-500 font-bold">Uv index</p>
